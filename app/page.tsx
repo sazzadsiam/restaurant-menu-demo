@@ -129,7 +129,7 @@ const HomePage = () => {
             side={"bottom"}
             className="max-w-[100vw] w-full bg-white h-[50vh]"
           >
-            <p>Comming soon</p>
+            <p className="text-black">Comming soon</p>
           </SheetContent>
         </Sheet>
       </main>

@@ -7,7 +7,7 @@ import Image from "next/image";
 const Menu = () => {
   return (
     <div>
-      <nav className="flex gap-4 tablet:gap-12 w-full justify-center items-center pt-6 flex-wrap">
+      <nav className="flex gap-2 text-sm tablet:gap-8 w-full tablet:justify-center items-center mt-6 flex-wrap">
         <button className="px-[18px] py-3 bg-primary text-white border-neutral-200 drop-shadow-sm font-medium rounded-sm">
           All
         </button>
