@@ -28,72 +28,59 @@ const Menu = () => {
         </button>
       </nav>
 
-      <ScrollArea style={{ height: "80vh" }}>
+      <ScrollArea
+        style={{
+          height: "80vh",
+          width: "100%",
+          padding: "8px 0px",
+        }}
+      >
         <section className="grid grid-cols-1 tablet:grid-cols-2 gap-6 mt-10">
-          <div className="flex gap-x-4 bg-white border border-neutral-300 drop-shadow-sm p-6 rounded-md">
-            <Image
-              src="/images/food-one.png"
-              alt="food image"
-              width={280}
-              height={220}
-              className="w-[140px] h-[110px] tablet:w-[180px] tablet:h-[150px] laptop:w-[280px] laptop:h-[220px] object-cover rounded-sm"
-            />
-            <div className="flex flex-col gap-y-2">
-              <h2 className="text-xl font-semibold">
-                Chicken Skewers with Peanut Sauce
-              </h2>
-              <p className="text-sm">
-                Cauliflower, squash, onions, peppers, carrots and tofu, in a
-                flavorful shacha sauce
-              </p>
-              <p>
-                <span className="text-sm font-bold">With your choice of: </span>
-                <span className="text-sm">Chicken | Beef | Shrimp</span>
-              </p>
-              <div className="flex gap-x-2">
-                <span className="text-sm font-bold">Price:</span>
-                <div className="text-sm flex flex-col gap-y-1">
-                  <span>Chicken- 35 AED</span>
-                  <span>Beef- 37 AED</span>
-                  <span>Shrimp- 39 AED</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex gap-x-4 bg-white border border-neutral-300 drop-shadow-sm p-6 rounded-md">
-            <Image
-              src="/images/food-one.png"
-              alt="food image"
-              width={280}
-              height={220}
-              className="w-[140px] h-[110px] tablet:w-[180px] tablet:h-[150px] laptop:w-[280px] laptop:h-[220px] object-cover rounded-sm"
-            />
-            <div className="flex flex-col gap-y-2">
-              <h2 className="text-xl font-semibold">
-                Chicken Skewers with Peanut Sauce
-              </h2>
-              <p className="text-sm">
-                Cauliflower, squash, onions, peppers, carrots and tofu, in a
-                flavorful shacha sauce
-              </p>
-              <p>
-                <span className="text-sm font-bold">With your choice of: </span>
-                <span className="text-sm">Chicken | Beef | Shrimp</span>
-              </p>
-              <div className="flex gap-x-2">
-                <span className="text-sm font-bold">Price:</span>
-                <div className="text-sm flex flex-col gap-y-1">
-                  <span>Chicken- 35 AED</span>
-                  <span>Beef- 37 AED</span>
-                  <span>Shrimp- 39 AED</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Items />
+          <Items />
+          <Items />
+          <Items />
+          <Items />
+          <Items />
+          <Items />
+          <Items />
         </section>
       </ScrollArea>
     </div>
   );
 };
 export default Menu;
+
+export const Items = () => {
+  return (
+    <div className="flex flex-col tablet:flex-row gap-3 bg-white border border-neutral-300 drop-shadow-sm rounded-md items-center">
+      <div className="w-auto h-full flex items-center p-4 bg-[#F0F0F0] rounded-sm">
+        <Image
+          src="/images/food-two.png"
+          alt="food image"
+          width={600}
+          height={440}
+          className="w-full aspect-[15/11] rounded-sm"
+        />
+      </div>
+
+      <div className="flex flex-col gap-y-2 py-4 px-2">
+        <h2 className="text-lg font-semibold">
+          Chicken Skewers with Peanut Sauce
+        </h2>
+        <p className="text-sm leading-[180%]">
+          Cauliflower, squash, onions, peppers, carrots and tofu, in a flavorful
+          shacha sauce With your choice of: Chicken | Beef | Shrimp.
+        </p>
+        <div className="flex gap-x-3 items-start">
+          <span className="text-primary font-bold text-sm">Price:</span>
+          <div className="text-sm flex flex-col gap-y-1 ">
+            <span>Chicken- 35 AED</span>
+            <span>Beef- 37 AED</span>
+            <span>Shrimp- 39 AED</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
