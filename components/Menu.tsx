@@ -35,7 +35,7 @@ const Menu = () => {
           padding: "8px 0px",
         }}
       >
-        <section className="grid grid-cols-1 tablet:grid-cols-2 gap-6 mt-10">
+        <section className="grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 gap-6 mt-10">
           <Items />
           <Items />
           <Items />
@@ -53,7 +53,7 @@ export default Menu;
 
 export const Items = () => {
   return (
-    <div className="flex flex-col tablet:flex-row gap-3 bg-white border border-neutral-300 drop-shadow-sm rounded-md items-center">
+    <div className="flex flex-col laptop:flex-row gap-3 bg-white border border-neutral-300 drop-shadow-sm rounded-md items-center">
       <div className="w-auto h-full flex items-center p-4 bg-[#F0F0F0] rounded-sm">
         <Image
           src="/images/food-two.png"
