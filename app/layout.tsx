@@ -29,9 +29,9 @@ export default function RootLayout({
           autoPlay
           muted
           loop
-          className="w-full h-screen object-cover fixed -z-10 top-0 left-0"
+          className="w-full max-h-screen h-full object-cover fixed -z-10 top-0 left-0"
         >
-          <source src="/videos/coocking-video.mp4" type="video/mp4" />
+          <source src="/videos/newVid.mp4" type="video/mp4" />
           Your browser does not support the video tag
         </video>
         {children}
